@@ -63,7 +63,7 @@ function App() {
   }
 
   const getData=async()=>{
-    const res=await contract.getAllMyUploads();
+    const res=await contract.getAllUploads();
     setData(res)
   }
 
