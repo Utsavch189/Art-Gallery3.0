@@ -1,0 +1,120 @@
+{
+    "abi": [{
+            "inputs": [{
+                "internalType": "uint256",
+                "name": "_id",
+                "type": "uint256"
+            }],
+            "name": "deletes",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [{
+                    "internalType": "string",
+                    "name": "_uri",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_desc",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_type",
+                    "type": "string"
+                }
+            ],
+            "name": "upload",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getAllMyUploads",
+            "outputs": [{
+                "components": [{
+                        "internalType": "uint256",
+                        "name": "id",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "description",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "uri",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "timstamp",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "own",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "types",
+                        "type": "string"
+                    }
+                ],
+                "internalType": "struct Todo.Uploads[]",
+                "name": "",
+                "type": "tuple[]"
+            }],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getAllUploads",
+            "outputs": [{
+                "components": [{
+                        "internalType": "uint256",
+                        "name": "id",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "description",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "uri",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "timstamp",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "own",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "types",
+                        "type": "string"
+                    }
+                ],
+                "internalType": "struct Todo.Uploads[]",
+                "name": "",
+                "type": "tuple[]"
+            }],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+}
